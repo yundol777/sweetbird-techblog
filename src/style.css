@@ -29,7 +29,7 @@ body {
 }
 
 .Main_container {
-    width: 38vw;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -46,9 +46,32 @@ body {
     font-weight: 700;
 }
 
+.Main_subTitle_highlight {
+    background: linear-gradient(90deg, #ff97ee, #4bbdff);
+    -webkit-background-clip: text;
+    color: #0000;
+}
+
+.Main_option button {
+    padding: 2px 15px;
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px; /* 동그란 버튼 */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* 부드러운 전환 효과 */
+}
+
+.Main_option button.active {
+    background: linear-gradient(90deg, #ff97ee, #4bbdff);
+    border-color: black;
+    color: black;
+}
+
 .Main_thumbnail_img {
     margin: 30px 0;
-    height: 36vh;
+    height: 280px;
 
     display: flex;
     flex-direction: column;
@@ -56,6 +79,8 @@ body {
 
     background-color: gray;
     border-radius: 10px;
+
+    text-decoration: none;
 }
 
 .Main_thumbnail_background {
@@ -65,6 +90,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: white;
 
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -95,13 +121,15 @@ body {
 
 .Main_border_img {
     margin: 20px 0;
-    height: 10vh;
+    height: 80px;
 
     display: flex;
     justify-content: flex-end;
 
     background-color: gray;
     border-radius: 10px;
+
+    text-decoration: none;
 }
 
 .Main_border_background {
@@ -113,12 +141,17 @@ body {
     justify-content: space-between;
 
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .Main_border_writer {
     display: flex;
     align-items: center;
     margin-bottom: 3px;
+}
+
+.Main_border_title {
+    font-size: 16px;
 }
 
 .border_writerProfile {
@@ -136,3 +169,38 @@ body {
 .Main_border_date {
     font-size: 0.7rem;
 }
+
+.Main_footer_page {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main_footer_page button {
+    background: linear-gradient(90deg, #ff97ee, #4bbdff);
+    -webkit-background-clip: text;
+    color: #0000;
+
+    border-color: gray;
+}
+
+.Main_footer_num {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 12px; /* 아이템 간의 간격 조정 */
+
+    font-size: 15px;
+}
+
+.Main_footer_num span:hover {
+    cursor: pointer;
+    color: #4bbdff;
+}
+
+.selected_num {
+    color: #ff97ee;
+}
+
+
