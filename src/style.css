@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.Main_userInfo {
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 0.8rem;
+}
+
+.Main_user {
+    margin: 0 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.Main_userProfile {
+    margin: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 70%;
+}
+
+.Main_container {
+    width: 38vw;
+    margin: 0 auto;
+}
+
+.Main_subTitle {
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+
+.Main_subTitle2 {
+    font-size: 1.4rem;
+}
+
+.Main_subTitle2 span {
+    font-weight: 700;
+}
+
+.Main_thumbnail_img {
+    margin: 30px 0;
+    height: 36vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.Main_thumbnail_background {
+    height: 6vh;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Main_thumbnail_writer {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+.thumbnail_writerProfile {
+    margin: 0 10px 0 0;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 70%;
+}
+
+.Main_thumbnail_write {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main_thumbnail_date {
+    font-size: 0.7rem;
+}
+
+.Main_border_img {
+    margin: 20px 0;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.Main_border_background {
+    width: 80%;
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Main_border_writer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.border_writerProfile {
+    margin: 0 6px 0 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 70%;
+}
+
+.border_writerName {
+    font-size: 0.7rem;
+}
+
+.Main_border_date {
+    font-size: 0.7rem;
+}
